@@ -1,13 +1,97 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
+  height: 100vh;
+  font-size: 16px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smohzothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html{
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: beige;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: brown;
+  color: aliceblue;
+}
+
+button:hover{
+  background-color: chocolate;
+  transition: all 0.3s ease-in-out;
+}
+
+main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5rem;
+ 
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+  font-size: 20px;
+  padding: 0.5rem;
+}
+
+
+
+.image-container img{
+  border-radius: 50px;
+}
+
+.employee{
+  padding: 1rem;
+}
+
+.Card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width : 200px;
+  height: 50%;
+  background-color: bisque;
+  border: 1px solid  #333;
 }
